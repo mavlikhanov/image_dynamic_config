@@ -1,2 +1,17 @@
-# image_dymanic_config
-Add image uploader to array_serialized
+# Upload image in array serialize module
+This module show how to add image uploader to dynamic array in magento configuration
+
+## Installation
+Clone this extension to app/code/Mr/ImageDynamicConfig
+```bash
+php bin/magento module:enable Mr_ImageDynamicConfig
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+```
+## Usage
+Go to admin panel -> stores -> configuration:
+Find Mr tab and click to "Image Array Swatch"
+
+![](https://ucda0cbdadf6e4eba60faf34e940.previews.dropboxusercontent.com/p/thumb/ABcOl3hX2QS69odYgg2vPvhNh_-4phHZO4l2fzEC0R8DIOLER_kXAgFQuuPojBjz1TXT3JVVXjhQ3jrDQU4Q8EL0XW6km-DVVxfXObDWADpp9JQG3mCfwyD_qYpj8OlIUZRj1cqRjdS25vOOps8gdN2V3_ka-MZaZHZHQYhoH4Z6k9CxYmqLo97DU5QeFLfbTyzTS-ahbRJaunpFw9CmuSLlF9ufHtM3JV7Q_ClRnoO8td5tML_2Msbr5EJ_WQJcntank71GPvUUBKfykGF28s5ref7Vrz2N00fJKbXW7_QL8RgDfLL5E88BNtR3daA6Vw9MP8f0EdYANSdqddzpzhbQEyJTLFL0Ite4aiJZxOvRUq5JodsAGIlcOQg6lQSM6AKjIB_ppDQFVTzlULROL0_mrTeexQkcLzPzksJ_B0PNlQ/p.png)
+Result:
+![](https://uc2c54de23ab241fe6d767327255.previews.dropboxusercontent.com/p/thumb/ABcbf6lQdDaJ4iV4wP1Vhyst9t5iKW9qyryl9XIUgyDPdXXxE5eU8rrfoh6JUCONAHU9dkdUfPesfz-lNLAV3KdHmeaOxKcjAA5FNTDPO6LXdsBdU5t7RhTOtOY8vyvbYKbvhB8J4wwkd7pnMMQFrJvY2M5lcC8h6fVTLEadmFnIHe94UaWjVrGHWl5QcA_vQ64sQXEpT-zJEiaUMGv7_yKtd5k4QdVtfaTcZd-Hk9X9SYk68jCXdnhtJy4hL-FOZqyjkHdFJAtWSlRtSNdNzEIyG0L6Aeg7A6r3g5K9wL2WxGSVgBlGiQSJGloaJtmwRxth-a-CMaAYMf1-tT-0Y9Zy2pQXURq8yQjiLoNZpWBPvn5NqHde64keEUUN0o27Loz7cpx4fFAlfB8XdLBqUtB7dxwy97nnWgV6T7D4gfT7cA/p.png)

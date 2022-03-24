@@ -18,7 +18,9 @@ class ArrayFileModifier
 
     public function modify(): array
     {
-        $requestFiles = $this->parseRequest();
+        $requestFiles = $this->parseRequest(
+            $this->request->getFiles($this->requestName)
+        );
         $files = [];
         foreach ($requestFiles as $id => $file) {
             $data = array_shift($file);
@@ -31,9 +33,8 @@ class ArrayFileModifier
         return $files;
     }
 
-    private function parseRequest(): array
+    private function parseRequest(array $requestFiles): array
     {
-        $requestFiles = $this->request->getFiles($this->requestName);
         if (isset($requestFiles['value'])) {
             return $requestFiles['value'];
         }
