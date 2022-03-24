@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mr" translate="label" sortOrder="400">
+            <label>Mr</label>
+        </tab>
+        <section id="swatch" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Image Array Swatch</label>
+            <tab>mr</tab>
+            <resource>Mr_ImageDynamicConfig::config</resource>
+            <group id="image_serializer" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="image" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Image</label>
+                    <frontend_model>Mr\ImageDynamicConfig\Block\Adminhtml\System\Config\ImageFields</frontend_model>
+                    <backend_model>Mr\ImageDynamicConfig\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <upload_dir>var/uploads/swatch/image_serializer</upload_dir>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

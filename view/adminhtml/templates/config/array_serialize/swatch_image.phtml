@@ -1,0 +1,34 @@
+<?php
+/*** @var \Mr\ImageDynamicConfig\Block\Adminhtml\ImageButton $block */
+$css = $block->getAssertRepository()->createAsset("Mr_ImageDynamicConfig::css/image_button.css");
+?>
+<link rel="stylesheet" type="text/css" media="all" href="<?php /* @escapeNotVerified */echo $css->getUrl() ?>"/>
+
+<div class="upload-file" data-id="<?=$block->getId()?>">
+    <div class="upload-file__block upload-file__block_first">
+        <img class="upload-file__block__img" id="swatch_image_image_<?= $block->getId() ?>" src="">
+    </div>
+    <div class="upload-file__block">
+        <input class="upload-file__input" hidden type="file" name="<?= $block->getName() ?>" id="swatch_image_input_<?= $block->getId() ?>" value=""/>
+        <label class="upload-file__label" for="swatch_image_input_<?= $block->getId() ?>">
+            <?= __("File") ?>
+        </label>
+    </div>
+    <input class="upload-file__input" type="hidden" id="<?=$block->getId()?>">
+</div>
+
+
+<script type="text/javascript">
+    require(["jquery"], function (jq) {
+        jq(function () {
+            const id = "<?=$block->getId()?>"
+            const imageId = "swatch_image_image_<?=$block->getId()?>"
+            const data = jq("#" + id).val();
+            console.log(data, id)
+            if (data) {
+                jq("#" + imageId).attr("src", data)
+                jq("#" + imageId).attr("value", data)
+            }
+        });
+    });
+</script>
