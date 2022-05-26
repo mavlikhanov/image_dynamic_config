@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Mr\ImageDynamicConfig\Block\Adminhtml;
+namespace Mrmodule\ImageDynamicConfig\Block\Adminhtml;
 
 class ImageButton extends \Magento\Backend\Block\Template
 {
-    protected $_template = 'Mr_ImageDynamicConfig::config/array_serialize/swatch_image.phtml';
+    protected $_template = 'Mrmodule_ImageDynamicConfig::config/array_serialize/swatch_image.phtml';
 
     private $assetRepository;
 

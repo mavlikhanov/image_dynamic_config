@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Mr\ImageDynamicConfig\Block\Adminhtml\Form\Field;
+namespace Mrmodule\ImageDynamicConfig\Block\Adminhtml\Form\Field;
 
-use Mr\ImageDynamicConfig\Block\Adminhtml\ImageButton;
+use Mrmodule\ImageDynamicConfig\Block\Adminhtml\ImageButton;
 
 class ImageColumn extends \Magento\Framework\View\Element\AbstractBlock
 {

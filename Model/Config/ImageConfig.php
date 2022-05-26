@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mr\ImageDynamicConfig\Model\Config;
+namespace Mrmodule\ImageDynamicConfig\Model\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\Serialize\SerializerInterface;

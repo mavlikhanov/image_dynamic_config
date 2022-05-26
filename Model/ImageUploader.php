@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mr\ImageDynamicConfig\Model;
+namespace Mrmodule\ImageDynamicConfig\Model;
 
 use Magento\MediaStorage\Model\File\Uploader;
 
@@ -13,7 +13,7 @@ class ImageUploader
     private $allowExtensions;
 
     public function __construct(
-        \Mr\ImageDynamicConfig\Model\ArrayFileModifier $arrayFileModifier,
+        \Mrmodule\ImageDynamicConfig\Model\ArrayFileModifier $arrayFileModifier,
         \Magento\MediaStorage\Model\File\UploaderFactory $uploaderFactory,
         string $uploadDir,
         array $allowExtensions

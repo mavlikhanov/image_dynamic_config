@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mr\ImageDynamicConfig\Block\Adminhtml\System\Config;
+namespace Mrmodule\ImageDynamicConfig\Block\Adminhtml\System\Config;
 
 use Magento\Config\Block\System\Config\Form\Field\FieldArray\AbstractFieldArray;
 
@@ -37,7 +37,7 @@ class ImageFields extends AbstractFieldArray
     {
         if (!$this->imageRenderer) {
             $this->imageRenderer = $this->getLayout()->createBlock(
-                \Mr\ImageDynamicConfig\Block\Adminhtml\Form\Field\ImageColumn::class,
+                \Mrmodule\ImageDynamicConfig\Block\Adminhtml\Form\Field\ImageColumn::class,
                 '',
                 ['data' => ['is_render_to_js_template' => true]]
             );

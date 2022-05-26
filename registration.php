@@ -2,6 +2,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Mr_ImageDynamicConfig',
+    'Mrmodule_ImageDynamicConfig',
     __DIR__
 );

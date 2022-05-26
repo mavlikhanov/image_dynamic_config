@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Mr\ImageDynamicConfig\Model\Config\Backend\Serialized;
+namespace Mrmodule\ImageDynamicConfig\Model\Config\Backend\Serialized;
 
 use Magento\Framework\Serialize\Serializer\Json;
-use Mr\ImageDynamicConfig\Block\Adminhtml\System\Config\ImageFields;
+use Mrmodule\ImageDynamicConfig\Block\Adminhtml\System\Config\ImageFields;
 
 class ArraySerialized extends \Magento\Config\Model\Config\Backend\Serialized\ArraySerialized
 {
@@ -16,8 +16,8 @@ class ArraySerialized extends \Magento\Config\Model\Config\Backend\Serialized\Ar
         \Magento\Framework\Registry $registry,
         \Magento\Framework\App\Config\ScopeConfigInterface $config,
         \Magento\Framework\App\Cache\TypeListInterface $cacheTypeList,
-        \Mr\ImageDynamicConfig\Model\Config\ImageConfig $imageConfig,
-        \Mr\ImageDynamicConfig\Model\ImageUploaderFactory $imageUploaderFactory,
+        \Mrmodule\ImageDynamicConfig\Model\Config\ImageConfig $imageConfig,
+        \Mrmodule\ImageDynamicConfig\Model\ImageUploaderFactory $imageUploaderFactory,
         \Magento\Framework\Model\ResourceModel\AbstractResource $resource = null,
         \Magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
         array $data = [],

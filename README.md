@@ -2,15 +2,15 @@
 This module show how to add image uploader to dynamic array in magento configuration
 
 ## Installation
-Clone this extension to app/code/Mr/ImageDynamicConfig
+Clone this extension to app/code/Mrmodule/ImageDynamicConfig
 ```bash
-php bin/magento module:enable Mr_ImageDynamicConfig
+php bin/magento module:enable Mrmodule_ImageDynamicConfig
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 ```
 ## Usage
 Go to admin panel -> stores -> configuration:
-Find Mr tab and click to "Image Array Swatch"
+Find Mrmodule tab and click to "Image Array Swatch"
 
 ![](https://ucda0cbdadf6e4eba60faf34e940.previews.dropboxusercontent.com/p/thumb/ABcOl3hX2QS69odYgg2vPvhNh_-4phHZO4l2fzEC0R8DIOLER_kXAgFQuuPojBjz1TXT3JVVXjhQ3jrDQU4Q8EL0XW6km-DVVxfXObDWADpp9JQG3mCfwyD_qYpj8OlIUZRj1cqRjdS25vOOps8gdN2V3_ka-MZaZHZHQYhoH4Z6k9CxYmqLo97DU5QeFLfbTyzTS-ahbRJaunpFw9CmuSLlF9ufHtM3JV7Q_ClRnoO8td5tML_2Msbr5EJ_WQJcntank71GPvUUBKfykGF28s5ref7Vrz2N00fJKbXW7_QL8RgDfLL5E88BNtR3daA6Vw9MP8f0EdYANSdqddzpzhbQEyJTLFL0Ite4aiJZxOvRUq5JodsAGIlcOQg6lQSM6AKjIB_ppDQFVTzlULROL0_mrTeexQkcLzPzksJ_B0PNlQ/p.png)
 Result:

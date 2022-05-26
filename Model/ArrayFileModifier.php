@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Mr\ImageDynamicConfig\Model;
+namespace Mrmodule\ImageDynamicConfig\Model;
 
 class ArrayFileModifier
 {
